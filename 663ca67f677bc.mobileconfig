@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>PayloadContent</key>
+    <array>
+      <dict>
+        <key>DNSSettings</key>
+        <dict>
+          <key>DNSProtocol</key>
+          <string>HTTPS</string>
+          <key>ServerAddresses</key>
+          <array>
+            <string>2003:a:64b:3b00::1</string>
+            <string>80.152.203.134</string>
+          </array>
+          <key>ServerURL</key>
+          <string>https://doht.kekew.info:65534/dns-query</string>
+        </dict>
+        <key>OnDemandRules</key>
+        <array>
+          <dict>
+            <key>Action</key>
+            <string>Connect</string>
+            <key>InterfaceTypeMatch</key>
+            <string>WiFi</string>
+          </dict>
+          <dict>
+            <key>Action</key>
+            <string>Connect</string>
+            <key>InterfaceTypeMatch</key>
+            <string>Cellular</string>
+          </dict>
+          <dict>
+            <key>Action</key>
+            <string>Disconnect</string>
+          </dict>
+        </array>
+        <key>PayloadDescription</key>
+        <string>Configures device to use loltty Encrypted DNS over HTTPS</string>
+        <key>PayloadDisplayName</key>
+        <string>loltty DNS over HTTPS</string>
+        <key>PayloadIdentifier</key>
+        <string>com.apple.dnsSettings.managed.1bf6d76f-2d7f-4006-b183-4a707a8f780a</string>
+        <key>PayloadType</key>
+        <string>com.apple.dnsSettings.managed</string>
+        <key>PayloadUUID</key>
+        <string>836f0f8a-558f-4fbf-9e9e-49bde1f4320f</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>ProhibitDisablement</key>
+        <false/>
+      </dict>
+    </array>
+    <key>PayloadDescription</key>
+    <string>Adds different encrypted DNS configurations to Big Sur (or newer) and iOS 14 (or newer) based systems</string>
+    <key>PayloadDisplayName</key>
+    <string>Encrypted DNS (DoH, DoT)</string>
+    <key>PayloadIdentifier</key>
+    <string>com.notjakob.apple-dns.069de9aa-524a-48d3-917d-b106f6a9485d</string>
+    <key>PayloadRemovalDisallowed</key>
+    <false/>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>5e67c6cf-0009-4bdb-9fc0-6b284d712c36</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+  </dict>
+</plist>
